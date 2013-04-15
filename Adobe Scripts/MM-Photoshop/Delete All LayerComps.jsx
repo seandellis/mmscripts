@@ -1,0 +1,1 @@
+﻿if(documents.length > 0){	    var doc = activeDocument;	//var activeLayer = doc.activeLayer;    var layerComps = doc.layerComps;	                 while(layerComps.length>0){                     layerComps[0].remove();                 }		}else{	alert("Open a Document");}doc = null;layerComps = null;

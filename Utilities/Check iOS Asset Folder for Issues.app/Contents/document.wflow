@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>330</string>
+	<key>AMApplicationVersion</key>
+	<string>2.2.2</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>defaultLocation</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+					<key>granularity</key>
+					<dict/>
+					<key>multipleSelection</key>
+					<dict/>
+					<key>promptMessage</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Where is your iOS asset folder?</string>
+						</array>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Ask for Finder Items.action</string>
+				<key>ActionName</key>
+				<string>Ask for Finder Items</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>defaultLocation</key>
+					<string>~/Desktop</string>
+					<key>granularity</key>
+					<integer>2</integer>
+					<key>multipleSelection</key>
+					<true/>
+					<key>promptMessage</key>
+					<string>Where is your iOS asset folder?</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.AskForFinderItems</string>
+				<key>CFBundleVersion</key>
+				<string>1.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAskForFinderItemsAction</string>
+				<key>InputUUID</key>
+				<string>9BB070EE-35E3-4F8D-82E7-FBBBB01922E0</string>
+				<key>Keywords</key>
+				<array>
+					<string>Find</string>
+					<string>Item</string>
+					<string>File</string>
+					<string>Folder</string>
+					<string>Ask</string>
+					<string>Choose</string>
+					<string>Prompt</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>23942F9F-4328-4EDC-9B26-A49C6C9099FD</string>
+				<key>UUID</key>
+				<string>4ED4AE2A-F5D2-4E97-A45B-68BB4340CFDF</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>multipleSelection</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>granularity</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string>~/Desktop</string>
+						<key>name</key>
+						<string>defaultLocation</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string>Choose a Finder Item:</string>
+						<key>name</key>
+						<string>promptMessage</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>583.000000:735.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'fileutils'
+
+# Main block
+
+def main
+  files_wo_1x_version = []
+  files_wo_2x_version = []
+  size_errors = []
+
+  mainPath = ARGF.first
+  mainPath.sub!(/\n/,'')
+  regexPath = File.join(mainPath,"**","*.png")
+  png_files = Dir.glob(regexPath)
+  
+  png_files.each { |png_file|
+    name_parts = png_file.split(/[@\.]/)
+
+    v1x_exists = false
+    v2x_exists = false
+    
+    if name_parts.length == 3 then
+      v1_name = "#{name_parts[0]}.#{name_parts[2]}"
+      v2_name = "#{name_parts[0]}@2x.#{name_parts[2]}"
+      v1x_exists = File.exists?(v1_name)
+      v2x_exists = File.exists?(v2_name)
+      files_wo_1x_version &lt;&lt; png_file unless v1x_exists
+      
+      if v1x_exists and v2x_exists then
+        v1_info = `file #{v1_name}`.match(/(\d+) x (\d+)/)
+        v2_info = `file #{v2_name}`.match(/(\d+) x (\d+)/)
+        v1w = v1_info[1].to_i
+        v1h = v1_info[2].to_i
+        v2w = v2_info[1].to_i
+        v2h = v2_info[2].to_i
+        v2w_expected = v1w * 2
+        v2h_expected = v1h * 2
+
+        if v2w != v2w_expected or v2h != v2h_expected then
+          size_errors &lt;&lt; "#{v2_name}: SIZE IS #{v2w} x #{v2h}, EXPECTED #{v2w_expected} x #{v2h_expected}"
+        end
+      end      
+      
+    elsif name_parts.length == 2 then
+      v1_name = "#{name_parts[0]}.#{name_parts[1]}"
+      v2_name = "#{name_parts[0]}@2x.#{name_parts[1]}"
+      v1x_exists = File.exists?(v1_name)
+      v2x_exists = File.exists?(v2_name)
+      files_wo_2x_version &lt;&lt; png_file unless v2x_exists
+    end
+  }
+  
+  if png_files.empty? then
+    puts "HEY, THERE'S NO PNG FILES IN THE CURRENT FOLDER."
+    return
+  end
+  
+  is_all_okay = true
+  
+  unless files_wo_1x_version.empty? then
+    puts "FILES WITHOUT @1x VERSION ============================================"
+    puts files_wo_1x_version
+    puts
+    is_all_okay = false
+  end
+  
+  unless files_wo_2x_version.empty? then
+    puts "FILES WITHOUT @2x VERSION ============================================"
+    puts files_wo_2x_version
+    puts
+    is_all_okay = false
+  end
+
+  unless size_errors.empty? then
+    puts "INVALID IMAGE SIZES DETECTED FOR THE FOLLOWING FILES ================="
+    puts size_errors
+    puts
+    is_all_okay = false
+  end
+  
+  if is_all_okay then
+    puts "YOUR PNG ASSETS IN THE CURRENT FOLDER ARE FINE, DUDE."
+  end
+  
+end
+
+# Aux methods
+
+main
+</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>0</integer>
+					<key>shell</key>
+					<string>/usr/bin/ruby</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>86F891F8-DF89-459C-B481-4824BF527E2D</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>DC5FE034-4314-47C1-AFFF-B0378A916780</string>
+				<key>UUID</key>
+				<string>23C0CA2A-EA61-4270-81B1-94AA23A7D979</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>583.000000:580.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.attributed-string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>TextEdit</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>addMethodIndicator</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.attributed-string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Set Contents of TextEdit Document.action</string>
+				<key>ActionName</key>
+				<string>Set Contents of TextEdit Document</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>addMethodIndicator</key>
+					<integer>1</integer>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.SetContentOfTextEditDocument</string>
+				<key>CFBundleVersion</key>
+				<string>1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryText</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMSetContentsOfTextEditDocumentAction</string>
+				<key>InputUUID</key>
+				<string>EA1B3814-F903-4DD6-A84D-01F82784C392</string>
+				<key>Keywords</key>
+				<array>
+					<string>Set</string>
+					<string>Text</string>
+					<string>Document</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>2487DC95-7AB5-4930-9E91-C54923E12832</string>
+				<key>ShowWhenRun</key>
+				<true/>
+				<key>UUID</key>
+				<string>52819242-DBE6-4C00-90E2-F642A71556EB</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>TextEdit</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>addMethodIndicator</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>583.000000:397.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Set Contents of TextEdit Document.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>4E90A031-21CB-4714-A63C-F2D411B3163F</key>
+		<dict>
+			<key>from</key>
+			<string>4ED4AE2A-F5D2-4E97-A45B-68BB4340CFDF - 4ED4AE2A-F5D2-4E97-A45B-68BB4340CFDF</string>
+			<key>to</key>
+			<string>23C0CA2A-EA61-4270-81B1-94AA23A7D979 - 23C0CA2A-EA61-4270-81B1-94AA23A7D979</string>
+		</dict>
+		<key>BE94605A-BEC3-40D8-99FC-8859F2F4B3B5</key>
+		<dict>
+			<key>from</key>
+			<string>23C0CA2A-EA61-4270-81B1-94AA23A7D979 - 23C0CA2A-EA61-4270-81B1-94AA23A7D979</string>
+			<key>to</key>
+			<string>52819242-DBE6-4C00-90E2-F642A71556EB - 52819242-DBE6-4C00-90E2-F642A71556EB</string>
+		</dict>
+	</dict>
+	<key>state</key>
+	<dict>
+		<key>AMLogTabViewSelectedIndex</key>
+		<integer>0</integer>
+		<key>libraryState</key>
+		<dict>
+			<key>actionsMajorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 381.000000, 645.000000, NO</string>
+					<string>0.000000, 646.000000, 381.000000, 239.000000, NO</string>
+				</array>
+			</dict>
+			<key>actionsMinorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 150.000000, 645.000000, NO</string>
+					<string>151.000000, 0.000000, 230.000000, 645.000000, NO</string>
+				</array>
+			</dict>
+			<key>variablesMajorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 350.000000, 555.000000, NO</string>
+					<string>0.000000, 556.000000, 350.000000, 148.000000, NO</string>
+				</array>
+			</dict>
+			<key>variablesMinorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 163.000000, 555.000000, NO</string>
+					<string>164.000000, 0.000000, 186.000000, 555.000000, NO</string>
+				</array>
+			</dict>
+		</dict>
+		<key>majorSplitViewState</key>
+		<dict>
+			<key>expandedPosition</key>
+			<real>571</real>
+			<key>subviewState</key>
+			<array>
+				<string>0.000000, 0.000000, 381.000000, 930.000000, NO</string>
+				<string>382.000000, 0.000000, 706.000000, 930.000000, NO</string>
+			</array>
+		</dict>
+		<key>minorSplitViewState</key>
+		<dict>
+			<key>expandedPosition</key>
+			<real>0.0</real>
+			<key>subviewState</key>
+			<array>
+				<string>0.000000, 0.000000, 706.000000, 739.000000, NO</string>
+				<string>0.000000, 749.000000, 706.000000, 162.000000, NO</string>
+			</array>
+		</dict>
+		<key>windowFrame</key>
+		<string>{{-1170, 8}, {1087, 1007}}</string>
+		<key>workflowViewScrollPosition</key>
+		<string>{{0, 0}, {706, 739}}</string>
+	</dict>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.application</string>
+	</dict>
+</dict>
+</plist>

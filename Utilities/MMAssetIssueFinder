@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+
+require 'find' 
+require 'fileutils'
+
+currentScriptFileName = "#{File.basename(__FILE__)}"
+current_path = __FILE__.gsub(currentScriptFileName,"")
+
+missing2x = []
+wrongdim = []
+issues = {}
+allPaths = %x[find #{current_path} -type f]
+allPaths = allPaths.split(/\n/)
+allPaths.each do |file_path| 
+  next if file_path.include? "svn" or file_path.include? "#{currentScriptFileName}" or file_path.include? "@2x" or (File.file? file_path) == false
+  
+  extension = File.extname(file_path)
+  filename = file_path.gsub(extension,"")
+  
+  if ([".png", ".jpg"].include? extension) == false
+    next
+  end
+
+  retina  = filename + "@2x" + extension
+  if (allPaths.include? retina) == false
+    missing2x << file_path
+  else
+    begin
+      width = `sips -g pixelWidth "#{retina}"`.split("pixelWidth: ").last.chomp.to_i
+      height = `sips -g pixelHeight "#{retina}"`.split("pixelHeight: ").last.chomp.to_i
+      diff = (width%2) + (height%2)
+      if diff>0
+        wrongdim << file_path
+      end
+    rescue
+    end
+  end
+end
+
+report_name = current_path + "MMAssetIssueFinder_report.txt"
+begin
+File.delete(report_name)
+rescue
+end
+File.open(report_name,"w") do |f|
+  f.puts "Missing @2x"
+  missing2x.each do |path|
+    f.puts path
+  end
+  f.puts "\nWrong @2x dimensions"
+  wrongdim.each do |path|
+    f.puts path
+  end  
+end
